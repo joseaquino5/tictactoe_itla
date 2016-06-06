@@ -1,24 +1,21 @@
-/*
- * TicTacToe.h
- *
- *  Created on: May 22, 2016
- *      Author: raydelto
- */
-
-#ifndef TICTACTOE_H_
-#define TICTACTOE_H_
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <sstream>
+#define cls system("cls");
 
+using namespace std;
+bool cambiarPosicion(string posicion, string XO);
+bool searchWinner();
+bool isTie();
+bool gameOver();
+bool welcomeToGame();
+bool verifyOption(string fist, string second, string third, string method);
+void display ();
+void restartGame();
+void welcomePlayers();
+void howToPlay();
+void switchPlayers();
 void init();
-bool validate();
-void clearScreen();
-void showBoard();
-bool isValidInput(std::istream&);
-bool isAvailable(int , int );
-bool gameOver(); //implement this method
+string IntToString (int a);
 
-
-
-
-
-#endif /* TICTACTOE_H_ */

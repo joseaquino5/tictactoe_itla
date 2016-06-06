@@ -1,10 +1,8 @@
-#include <iostream>
-#include "TicTacToe.h"
-using namespace std;
+#include "Tic Tac Toe.h"
 
 int main()
 {
-	init();
-	showBoard();
-	return 0;
+    init();
+    return 0;
 }
+
